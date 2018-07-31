@@ -794,8 +794,8 @@ var bigInt = (function (undefined) {
         if (isPrime !== undefined) return isPrime;
         var n = this.abs(),
             nPrev = n.prev();
-            var a = [2, 325, 9375, 28178, 450775, 9780504, 1795265022],
-                b = nPrev,
+        var a = [2, 325, 9375, 28178, 450775, 9780504, 1795265022],
+            b = nPrev,
             d, t, i, x;
         while (b.isEven()) b = b.divide(2);
         for (i = 0; i < a.length; i++) {
